@@ -1,0 +1,10 @@
+<view class="conbox">
+    <p class="coin">{{number}} 畅玩币</p>
+    <p class="price">¥ {{price}}</p>
+    <div class="collection">
+        <p>收款方</p>
+        <p>XXXXXXXXXXXX</p>
+    </div>
+</view>
+
+<button class="paybtn" bindtap="goToPay">立即支付</button>

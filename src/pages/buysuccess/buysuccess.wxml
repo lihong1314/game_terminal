@@ -1,0 +1,18 @@
+<view class="buysuccess">
+    <view class="buysuccess_img">
+        <image src="/assets/images/success.png"></image>
+        <p>换购成功</p>
+    </view>
+    <view class="instructions">
+        <p>您已换购 <span>{{gameTime}}</span> 分钟游戏时长，计时开始</p>
+        <p>请在 <span>{{storeName}}</span>进行游戏</p>
+    </view>
+    <view class="note">
+        <p>注：</p>
+        <p>1. 换购游戏时长后，不支持除故障以外引起的退款。</p>
+        <p>2. 换购后仅支持一次性完成消费，若本次时间未结束提前离开，不可下次续用。</p>
+    </view>
+    <view class="buytimebtnbox">
+        <button class="btn" bindtap="goToIndex">逛逛首页</button>
+    </view>
+</view>

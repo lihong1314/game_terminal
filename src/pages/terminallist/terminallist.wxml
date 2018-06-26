@@ -1,0 +1,24 @@
+
+<view class="terminalbox">
+    <p class="terminalbox_title">请选择您的xxx游戏设备：</p>
+    <view class="terminalblock">
+        <view class="terminal_item" bindtap="goToBuyTime">
+            <view class="terminal_item_left">
+                <p class="terminal_name">XXX游戏机 -回龙观华联店</p>
+                <p class="address">XXXXXXXXXXXXXXX位置</p>
+            </view>
+            <view class="terminal_item_right">
+                <p>206m</p>
+            </view>
+        </view>
+        <view class="terminal_item"  bindtap="goToBuyTime">
+            <view class="terminal_item_left">
+                <p class="terminal_name">XXX游戏机 -回龙观华联店</p>
+                <p class="address">XXXXXXXXXXXXXXX位置</p>
+            </view>
+            <view class="terminal_item_right">
+                <p>206m</p>
+            </view>
+        </view>
+    </view>
+</view>

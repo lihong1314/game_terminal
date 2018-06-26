@@ -1,0 +1,22 @@
+<view class="buytimebox">
+    <view class="console">
+        <p>游戏机：</p> 
+        <p class="game_name">XXX游戏机 -回龙观华联店</p>
+    </view>
+    <view class="coin">
+        <p>畅玩币：</p>
+        <div class="coin_console">
+            <span bindtap="decrement">-</span>
+            <input type="text" placeholder="1" value="{{cionNum}}"/>
+            <span bindtap="incremental">+</span>
+        </div>
+    </view>
+    <view class="gametime">
+        <p>游戏时长：</p>
+        <p>{{gameTime}}分钟</p>
+    </view>
+</view>
+
+<view class="buytimebtnbox">
+    <button class="btn" bindtap="goToBuyTimeFn">确定换购</button>
+</view>

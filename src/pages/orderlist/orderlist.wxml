@@ -1,0 +1,51 @@
+<view class="content">
+    <ul class="tapbox">
+        <li class="{{typeIndex == 1 ? 'tap_active' :''}}" data-type="1" bindtap="changeType">畅玩币</li>
+        <li class="{{typeIndex == 2 ? 'tap_active' :''}}" data-type="2" bindtap="changeType">游戏时长</li>
+    </ul>
+    <div class="listbox">
+        <div class="cionlist" wx:if="{{typeIndex == 1}}">
+            <view hidden="true"> 
+                <div class="cion_item">
+                    <p><span>1畅玩币</span><span class="cion_price">￥8</span></p>
+                    <p><span>2018.6.5 15:25</span><span class="cion_state">已完成</span><span class="cion_refund">退款</span></p>
+                </div>
+                <div class="cion_item">
+                    <p><span>1畅玩币</span><span class="cion_price">￥8</span></p>
+                    <p><span>2018.6.5 15:25</span><span class="cion_state">已完成</span><span class="cion_refund">退款</span></p>
+                </div>
+                <view class="note">
+                    <p>注：</p>
+                    <p>选择退款后，2个工作日内按支付流程原路返还订单金额；</p>
+                    <p>若有疑问请拨打400-800-29848</p>
+                </view>
+            </view>
+            <view class="cion_noitem" bindtap="goToPaylist">
+                <image src="/assets/images/homenull.png"></image>
+                <p>您还没有订单~</p>
+                <button>购买畅玩币</button>
+            </view>
+        </div>
+        <div class="cionlist" wx:if="{{typeIndex == 2}}">
+            <view hidden="true">
+                <div class="time_item">
+                    <p><span>60分钟</span><span>1 畅玩币</span></p>
+                    <p><span>2018.6.5 15:25</span><span>江北城外烤鱼-回龙观华联店</span><span>已完成</span></p>
+                </div>
+                <view class="note">
+                    <p>注：</p>
+                    <p>1. 换购游戏时长后，不支持除故障以外引起的退款。</p>
+                    <p>2. 换购后仅支持一次性完成消费，若本次时间未结束提前离开，不可下次续用。</p>
+                </view>
+            </view>
+            <view class="cion_noitem" bindtap="goToTerminalList">
+                <image src="/assets/images/homenull.png"></image>
+                <p>您还没有订单~</p>
+                <button>换购游戏时长</button>
+            </view>
+            
+        </div>
+    </div>
+</view>
+
+

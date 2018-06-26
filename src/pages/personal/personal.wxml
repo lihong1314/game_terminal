@@ -1,0 +1,40 @@
+<view class="person">
+    <view class="pserson_img">
+        <image src="/assets/images/person.png"></image>
+    </view>
+    <p bindtap="goLogin">请点击登录</p>
+</view>
+<view class="listbox">
+    <navigator url="/pages/balance/balance">
+        <view class="list_item list_item_first">
+            <view class="list_item_font">
+                <image src="/assets/images/coin.png"></image>畅玩币余额
+            </view>
+            <view class="list_item_right server">
+                0<image src="/assets/images/right.png"></image>
+            </view>
+        </view>
+    </navigator>
+    <navigator url="/pages/orderlist/orderlist">
+        <view class="list_item">
+            <view class="list_item_font">
+                <image src="/assets/images/order.png"></image>我的订单
+            </view>
+            <view class="list_item_right">
+                <image src="/assets/images/right.png"></image>
+            </view>
+        </view>
+    </navigator>
+    <view class="list_item" bindtap="callPhone">
+        <view class="list_item_font">
+            <image src="/assets/images/service.png"></image>联系客服
+        </view>
+        <view class="list_item_right server">
+            400-800-5665<image src="/assets/images/right.png"></image>
+        </view>
+    </view>
+</view>
+
+<view class="loginoutbox">
+    <button class="loginout">退出登录</button>
+</view>

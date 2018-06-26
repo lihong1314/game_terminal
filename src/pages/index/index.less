@@ -1,0 +1,151 @@
+
+
+page{
+  background: #ffffff;
+}
+
+.bannerbox {
+  overflow-y: hidden;
+  swiper {
+    height: 350rpx;
+    swiper-item {
+      text-align: center;
+      image {
+        width: 100%;
+        height: 350rpx;
+      }
+    }
+  }
+}
+
+.contentbox{
+  padding:30rpx;
+  overflow: hidden;
+  height: 200rpx;
+  .contentbox_left{
+    float:left;
+    width:62%;
+    height: 100%;
+    border-right:1rpx solid #efefef;
+  }
+  .welcome{
+    font-size:32rpx;
+    line-height: 140rpx;
+    span{
+      color:#000;
+    }
+  }
+  .currency{
+    font-size:30rpx;
+    padding-top:20rpx;
+    view{
+      display: block;
+      color:#8492a6;
+      >span{
+        font-size:32rpx;
+        color:#333
+      }
+    }
+    view:last-of-type{
+      margin-top:10rpx;
+    }
+    image{
+      width:36rpx;
+      height:36rpx;
+      margin-right:10rpx;
+      position: relative;
+      top:6rpx;
+    }
+  }
+  .currency_inner{
+    font-size:32rpx;
+    line-height: 100rpx;
+    image{
+      width:36rpx;
+      height:36rpx;
+      margin-right:10rpx;
+      position: relative;
+      top:6rpx;
+    }
+  }
+  .contentbox_right{
+    float:right;
+    width:34%;
+    height: 100%;
+    .btnbox{
+      display: block;
+      background:#20A0FF;
+      width:100%;
+      height: 85%;
+      border-radius:4rpx;
+      margin-top:10rpx;
+      color:#fff;
+    }
+    span{
+      display: block;
+      text-align: center
+    }
+    span:first-of-type{
+      font-size: 28rpx;
+      padding-top:20rpx;
+    }
+    span:last-of-type{
+      font-size: 24rpx;
+    }
+  }
+}
+
+
+.storebox{
+  width: 100%;
+  height: auto;
+  border-bottom:1rpx solid #e5e5e5;
+  .store_instructions{
+    border-top:1rpx solid #e5e5e5;
+    line-height: 80rpx;
+    color:#8492a6;
+    font-size:28rpx;
+    padding-left:30rpx;
+  }
+  .store{
+    padding-left:30rpx;
+    .store_item{
+      border-top:1rpx solid #e5e5e5;
+      padding:20rpx 30rpx 20rpx 0;
+      overflow: hidden;
+      .store_item_img{
+        float:left;
+        width:240rpx;
+        height: 136rpx;
+        background:#f1f1f1;
+        image{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .store_item_con{
+        float:right;
+        width:420rpx;
+        p{
+          font-size: 32rpx;
+          color:#333;
+          line-height: 60rpx;
+        }
+        .store_item_in{
+          display: flex;
+          justify-content: space-between;
+          font-size:28rpx;
+          color:#8492a6;
+          margin-top:20rpx;
+          image{
+            width:32rpx;
+            height:32rpx;
+            margin-right:5rpx;
+            position: relative;
+            top:6rpx;
+          }
+        }
+      }
+    }
+  }
+}

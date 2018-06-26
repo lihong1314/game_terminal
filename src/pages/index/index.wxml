@@ -1,0 +1,55 @@
+
+<view>
+  
+  <view class="bannerbox">
+    <swiper indicator-dots='true' indicator-active-color='#20A0FF' autoplay="true" interval="3000" duration="500" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355px" height="166px"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="contentbox">
+    <view class="contentbox_left welcome" hidden="true">欢迎来到<span>XXXXXXXX</span></view>
+    <view class="contentbox_left currency" hidden="true">
+      <view class="currency_inner"><image src="/assets/images/coin.png"></image>畅玩币余额：<span>0</span></view>
+    </view>
+    <view class="contentbox_left currency" >
+      <view><image src="/assets/images/coin.png"></image>畅玩币余额：<span>0</span></view>
+      <view><image src="/assets/images/time.png"></image>剩余时长：<span>00分00秒</span></view>
+    </view>
+    <view class="contentbox_right" hidden="true">
+      <view class="btnbox" bindtap="goToPaylist">
+        <span>购买畅玩币</span>
+        <span>（1币=60分钟）</span>
+      </view>
+    </view>
+    <view class="contentbox_right" bindtap="goToTerminalList">
+      <view class="btnbox">
+          <span>购换游戏时长</span>
+          <span>（1币=60分钟）</span>
+        </view>
+    </view>
+  </view>
+
+  <view class="storebox">
+    <view class="store_instructions">在以下店铺也可畅玩xxxxx</view>
+    <view class="store">
+      <view class="store_item">
+        <view class="store_item_img">
+          <image src=""></image>
+        </view>
+        <view class="store_item_con">
+          <p>XXX游戏机 -北京华联店1</p>
+          <view class="store_item_in">
+            <span><image src="/assets/images/sentiment.png"></image>300人玩过</span>
+            <span><image src="/assets/images/address.png"></image>450m</span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

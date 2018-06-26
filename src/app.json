@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/balance/balance",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/loginmode/loginmode",
+    "pages/orderlist/orderlist",
+    "pages/settlement/settlement",
+    "pages/paylist/paylist",
+    "pages/terminallist/terminallist",
+    "pages/buysuccess/buysuccess",
+    "pages/buytime/buytime"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0D376D",
+    "navigationBarTitleText": "小游戏"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#333",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#e5e5e5",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "assets/images/home.png",
+      "selectedIconPath": "assets/images/home_selected.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/personal/personal",
+      "iconPath": "assets/images/my.png",
+      "selectedIconPath": "assets/images/my_selected.png",
+      "text": "我的"
+    }]
+  }
+}

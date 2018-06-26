@@ -1,0 +1,21 @@
+
+
+<template name="paylist">
+<view class="coinbox">
+    <p>请选择要购买的畅玩币：</p>
+    <div class="coin">
+        <div class="coin_item {{coinIndex == index ? 'coin_item_active' : ''}}" wx:for="{{coinlist}}" wx:key="index" bindtap="changeActive" data-index="{{index}}" data-number="{{item.number}}" data-price="{{item.price}}">
+            <p>{{item.number}}币</p>
+            <p class="coin_money">￥{{item.price}}</p>
+        </div>
+    </div>
+</view>
+
+<view class="tip" hidden="{{tipFlag}}">
+    <view class="tipbox">
+        <p>确认购买 <span>{{coinNumber}} 畅玩币</span></p>
+        <div class="tipbtn" bindtap="gotoComfir">去支付（{{coinPrice}}元）</div>
+        <div class="tipclose" bindtap="closeTip"><image src="/assets/images/close.png"></image></div>
+    </view>
+</view>
+</template>

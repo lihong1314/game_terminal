@@ -1,0 +1,16 @@
+<view class="balancebox">
+    <div><image src="/assets/images/coin.png"></image>畅玩币余额</div>
+    <p>3</p>
+</view>
+
+
+<import src="/components/paylist/paylist.wxml" />
+<view>
+    <template is="paylist" data="{{coinlist,tipFlag,coinNumber,coinPrice,coinIndex}}" />
+</view>
+
+<view class="note">
+    <p>注：</p>
+    <p>1. 支付成功后，不支持除故障以外引起的退款。</p>
+    <p>2. 购买后仅支持一次性完成消费，若本次时间未结束提前离开，不可下次续用。</p>
+</view>

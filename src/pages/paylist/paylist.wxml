@@ -1,0 +1,13 @@
+
+
+<import src="/components/paylist/paylist.wxml" />
+<view>
+    <template is="paylist" data="{{coinlist,tipFlag,coinNumber,coinPrice,coinIndex}}" />
+</view>
+
+<view class="note">
+    <p>注：</p>
+    <p>1. 1畅玩币=60分钟游戏时长。</p>
+    <p>2. 畅玩币订单支付后，可选择退款。</p>
+    <p>3. 畅玩币换购为游戏时长后，不支持除故障以外引起的退款。</p>
+</view>

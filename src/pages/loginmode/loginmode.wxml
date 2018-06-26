@@ -1,0 +1,15 @@
+<view class="loginMode_container">
+<!-- https://timg.ffan.com/convert/resize/url_T1IiEgBsJv1RCvBVdK/tfs/83c5339695c569614da5b434ae51f735.png -->
+   <image class="bannerImg" src="https://timg.ffan.com/convert/resize/url_T1TLVgBKxg1RCvBVdK/tfs/5b424110016e5f86fb234df0c4923079.png">
+   </image>
+   <view class = "weixinAuth">
+	   <button class="btnStyle weixin" open-type='getPhoneNumber' bindgetphonenumber='bindAccountBySilent'>
+	   		<image class="weixinIcon" src="https://timg.ffan.com/convert/resize/url_T1TLAgB5W_1RCvBVdK/tfs/784baae552e369e339867beb91aaf4cd.png"></image> <span>微信快速授权登录</span>
+	   </button>
+   </view>
+	<!-- <view class = "phoneLogin">
+	   <button class="btnStyle phone" bindtap="phoneLoginTap">
+	   		<span>输入手机号码登录</span>
+	   </button>
+	</view> -->
+</view>
