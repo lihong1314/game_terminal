@@ -18,7 +18,4 @@ Page({
             url: `/pages/index/index`
         })
     }
-
-
-    
 })
